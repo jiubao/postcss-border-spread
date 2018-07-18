@@ -7,14 +7,27 @@
 [ci]:      https://travis-ci.org/jiubao/postcss-border-spread
 
 ```css
+/* Input example */
 .foo {
-    /* Input example */
+    border: solid 1px #ccc;
+}
+.boo {
+   border: 3px 4px;
 }
 ```
 
 ```css
+/* Output example */
 .foo {
-  /* Output example */
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+}
+.boo {
+  border-top: 3px;
+  border-right: 4px;
+  border-bottom: 3px;
+  border-left: 4px;
 }
 ```
 
