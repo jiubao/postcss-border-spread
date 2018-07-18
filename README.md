@@ -1,6 +1,6 @@
 # PostCSS Border Spread [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin that spread border styles..
+[PostCSS] plugin that spread border styles.
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/jiubao/postcss-border-spread.svg
@@ -11,9 +11,6 @@
 .foo {
     border: solid 1px #ccc;
 }
-.boo {
-   border: 3px 4px;
-}
 ```
 
 ```css
@@ -22,12 +19,6 @@
   border-width: 1px;
   border-style: solid;
   border-color: #ccc;
-}
-.boo {
-  border-top: 3px;
-  border-right: 4px;
-  border-bottom: 3px;
-  border-left: 4px;
 }
 ```
 
