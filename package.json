@@ -1,6 +1,6 @@
 {
   "name": "postcss-border-spread",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "description": "PostCSS plugin that spread border styles.",
   "keywords": [
     "postcss",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/jiubao/postcss-border-spread",
   "dependencies": {
-    "postcss": "^6.0.16"
+    "postcss": "^6.0.16",
+    "standard-version": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
@@ -26,7 +27,8 @@
     "jest": "^22.4.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release": "standard-version && git push --follow-tags && npm publish --access=public"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5",
